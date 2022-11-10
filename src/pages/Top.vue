@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss" scoped>
-h1 {
-  color: $base-color;
-}
+  h1 {
+    // color: $base-color;
+  }
 </style>

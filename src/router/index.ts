@@ -6,20 +6,20 @@ const routes = [
     name: "top",
     component: async () => {
       return await import("@/pages/Top.vue");
-    },
-  },
-  {
-    path: "/login",
-    name: "login",
-    component: async () => {
-      return await import("@/pages/Login.vue");
-    },
-  },
+    }
+  }
+  // {
+  //   path: "/login",
+  //   name: "login",
+  //   component: async () => {
+  //     return await import("@/pages/Login.vue");
+  //   },
+  // },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  routes
 });
 
 export default router;

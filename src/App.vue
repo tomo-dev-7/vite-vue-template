@@ -1,16 +1,27 @@
 <script setup lang="ts">
 import TheHeader from "@/components/TheHeader.vue";
-import TheFooter from "@/components/TheFooter.vue";
+import TheHeaderSp from "@/components/sp/TheHeaderSp.vue";
+import TheSidebar from "@/components/TheSidebar.vue";
 </script>
 
 <template>
-  <TheHeader />
-  <RouterView class="main" />
-  <TheFooter />
+  <TheHeader class="onlyPC" />
+  <TheHeaderSp class="onlySP" />
+  <main>
+    <!-- <TheSidebar class="side" /> -->
+    <RouterView class="contents" />
+  </main>
 </template>
 
 <style lang="scss" scoped>
-.main {
-  height: calc(100vh - 80px);
+main {
+  display: flex;
+
+  .contents {
+    height: calc(100vh - 80px);
+    margin: 0 140px;
+    flex: 1;
+    padding-top: 40px;
+  }
 }
 </style>
